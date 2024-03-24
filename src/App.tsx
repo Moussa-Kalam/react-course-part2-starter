@@ -1,10 +1,10 @@
 import './App.css';
-import PostList from './react-query/PostList';
+import Counter from './state-management/Counter';
 
 function App() {
   return (
     <div>
-      <PostList />
+      <Counter />
     </div>
   );
 }
