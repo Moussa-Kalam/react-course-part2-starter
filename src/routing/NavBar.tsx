@@ -1,24 +1,26 @@
+import { Link } from 'react-router-dom';
+
 const NavBar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg"
+      className='navbar navbar-expand-lg'
       style={{ background: '#f0f0f0', marginBottom: '1rem' }}
     >
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+      <div className='container-fluid'>
+        <a className='navbar-brand' href='#'>
           My App
         </a>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link active" href="#">
+        <div className='collapse navbar-collapse' id='navbarNav'>
+          <ul className='navbar-nav'>
+            <li className='nav-item'>
+              <Link to='/' className='nav-link active'>
                 Home
-              </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className='nav-item'>
+              <Link to='/users' className='nav-link'>
                 Users
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
